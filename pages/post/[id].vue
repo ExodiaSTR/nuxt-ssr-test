@@ -4,7 +4,6 @@ import { getPosts, getComments } from '@/api/profile.api'
 const posts = await getPosts()
 const comments = await getComments()
 const route = useRoute()
-const router = useRouter()
 
 const post = ref({
   post: posts?.[+route.params.id - 1],
